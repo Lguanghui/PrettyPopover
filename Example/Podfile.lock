@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - PrettyPopover (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - PrettyPopover (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   PrettyPopover:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   PrettyPopover: 06dd8aaa91fa89f1e5902ebbbe8fc839e6a1b6e5
 
-PODFILE CHECKSUM: c47b0d6324285828ac285362e6bc8e749d367952
+PODFILE CHECKSUM: 9b54623b9a8baa5c97fefc6baf3750abe8d095c1
 
 COCOAPODS: 1.10.1
