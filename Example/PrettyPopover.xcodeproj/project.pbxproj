@@ -28,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09616D64735B106070767A03 /* PrettyPopover.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PrettyPopover.podspec; path = ../PrettyPopover.podspec; sourceTree = "<group>"; };
+		09616D64735B106070767A03 /* PrettyPopover.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PrettyPopover.podspec; path = ../PrettyPopover.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		145B887E4520BE1CFBB01924 /* Pods_PrettyPopover_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrettyPopover_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		212CC9E9A5EF8386A898C730 /* Pods_PrettyPopover_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrettyPopover_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		252842A3CFEF20A88F95CA45 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		252842A3CFEF20A88F95CA45 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		317F9B616CE7C4347E836DC2 /* Pods-PrettyPopover_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPopover_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PrettyPopover_Tests/Pods-PrettyPopover_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PrettyPopover_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettyPopover_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		667782752D0648AAB8ABDEC9 /* Pods-PrettyPopover_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPopover_Example.release.xcconfig"; path = "Target Support Files/Pods-PrettyPopover_Example/Pods-PrettyPopover_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B28BEF177D8A3F3EF9ABFB61 /* Pods-PrettyPopover_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPopover_Tests.release.xcconfig"; path = "Target Support Files/Pods-PrettyPopover_Tests/Pods-PrettyPopover_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D37C70EFC5F9D1C8D6948756 /* Pods-PrettyPopover_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPopover_Example.debug.xcconfig"; path = "Target Support Files/Pods-PrettyPopover_Example/Pods-PrettyPopover_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F902AE359DBDC674B1A15532 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F902AE359DBDC674B1A15532 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				317F9B616CE7C4347E836DC2 /* Pods-PrettyPopover_Tests.debug.xcconfig */,
 				B28BEF177D8A3F3EF9ABFB61 /* Pods-PrettyPopover_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

@@ -1,3 +1,5 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 
 platform :ios, '10.0'
@@ -10,4 +12,8 @@ target 'PrettyPopover_Example' do
 
     pod 'FBSnapshotTestCase' , '~> 2.1.4'
   end
+end
+
+post_install do |installer|
+  installer.pods_project.root_object.attributes["ORGANIZATIONNAME"] = "Guanghui Liang"
 end
