@@ -1,15 +1,22 @@
 PODS:
-  - PrettyPopover (0.1.0)
+  - PrettyPopover (0.1.0):
+    - SnapKit (= 4.0.1)
+  - SnapKit (4.0.1)
 
 DEPENDENCIES:
   - PrettyPopover (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
 
 EXTERNAL SOURCES:
   PrettyPopover:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PrettyPopover: e589097ce5de2f7666f28e79d588daa0d1e3dead
+  PrettyPopover: 52228cf5ac6bdd811b24dcaa952bdfa0fe359a31
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
 PODFILE CHECKSUM: 9b54623b9a8baa5c97fefc6baf3750abe8d095c1
 
