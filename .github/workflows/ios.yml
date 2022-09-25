@@ -27,7 +27,7 @@ jobs:
 #         curl -Os https://uploader.codecov.io/latest/macos/codecov
 #         chmod +x codecov
 #         ./codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v3.1.1
 #       with:
 #         directory: ./coverage/reports/
 #         fail_ci_if_error: true
