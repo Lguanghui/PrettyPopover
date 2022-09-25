@@ -1,6 +1,6 @@
 # PrettyPopover
 
-[![CI Status](https://img.shields.io/travis/Lguanghui/PrettyPopover.svg?style=flat)](https://travis-ci.org/Lguanghui/PrettyPopover)
+![CI Status](https://github.com/Lguanghui/PrettyPopover/.github/workflows/ios.yml/badge.svg)
 [![Version](https://img.shields.io/cocoapods/v/PrettyPopover.svg?style=flat)](https://cocoapods.org/pods/PrettyPopover)
 [![License](https://img.shields.io/cocoapods/l/PrettyPopover.svg?style=flat)](https://cocoapods.org/pods/PrettyPopover)
 [![Platform](https://img.shields.io/cocoapods/p/PrettyPopover.svg?style=flat)](https://cocoapods.org/pods/PrettyPopover)
