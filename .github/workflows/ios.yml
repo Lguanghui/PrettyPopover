@@ -23,12 +23,15 @@ jobs:
       with:
         additional_build_params: -destination 'platform=iOS Simulator,id=ED60A719-6E1A-47AA-BB47-53683C1584D6'
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-#         token: ${{ secrets.CODECOV_TOKEN }}
-        directory: ./coverage/reports/
-        fail_ci_if_error: true
-        files: ./coverage1.xml,./coverage2.xml
-        name: codecov-umbrella
-        path_to_write_report: ./coverage/codecov_report.txt
-        verbose: true
+      run: |
+        curl -Os https://uploader.codecov.io/latest/macos/codecov
+        chmod +x codecov
+        ./codecov
+#       uses: codecov/codecov-action@v3
+#       with:
+#         directory: ./coverage/reports/
+#         fail_ci_if_error: true
+#         files: ./coverage1.xml,./coverage2.xml
+#         name: codecov-umbrella
+#         path_to_write_report: ./coverage/codecov_report.txt
+#         verbose: true
