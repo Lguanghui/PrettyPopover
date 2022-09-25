@@ -25,5 +25,6 @@ jobs:
     - uses: codecov/codecov-action@v3
       with:
         name: codecov-umbrella # optional
+        files: ./coverage1.xml,./coverage2.xml # optional
         fail_ci_if_error: true # optional (default = false)
         verbose: true # optional (default = false)
