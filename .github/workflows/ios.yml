@@ -22,12 +22,6 @@ jobs:
       uses: ty0x2333/cocoapods-action@master
       with:
         additional_build_params: -destination 'platform=iOS Simulator,id=ED60A719-6E1A-47AA-BB47-53683C1584D6'
-    - uses: codecov/codecov-action@v3
-      with:
-        name: codecov-umbrella # optional
-        files: ./coverage1.xml,./coverage2.xml # optional
-        fail_ci_if_error: true # optional (default = false)
-        verbose: true # optional (default = false)
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
       with:
