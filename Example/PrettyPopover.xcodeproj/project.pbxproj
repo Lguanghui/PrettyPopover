@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DACFF5EC4781AD8DB59636A /* Pods_PrettyPopover_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212CC9E9A5EF8386A898C730 /* Pods_PrettyPopover_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		870E464141B56079F8B67F24 /* Pods_PrettyPopover_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E876AC5112FB638A21745B8 /* Pods_PrettyPopover_Tests.framework */; };
 		DFB9BAD62981EC573D3F2A6B /* Pods_PrettyPopover_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145B887E4520BE1CFBB01924 /* Pods_PrettyPopover_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,11 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04893B797D129A0C11D09193 /* Pods-PrettyPopover_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPopover_Tests.release.xcconfig"; path = "Target Support Files/Pods-PrettyPopover_Tests/Pods-PrettyPopover_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		09616D64735B106070767A03 /* PrettyPopover.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PrettyPopover.podspec; path = ../PrettyPopover.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		145B887E4520BE1CFBB01924 /* Pods_PrettyPopover_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrettyPopover_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		212CC9E9A5EF8386A898C730 /* Pods_PrettyPopover_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrettyPopover_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C8CF7DBA184D04F2EE712F /* Pods-PrettyPopover_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPopover_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PrettyPopover_Tests/Pods-PrettyPopover_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		252842A3CFEF20A88F95CA45 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		317F9B616CE7C4347E836DC2 /* Pods-PrettyPopover_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPopover_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PrettyPopover_Tests/Pods-PrettyPopover_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PrettyPopover_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettyPopover_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		667782752D0648AAB8ABDEC9 /* Pods-PrettyPopover_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPopover_Example.release.xcconfig"; path = "Target Support Files/Pods-PrettyPopover_Example/Pods-PrettyPopover_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B28BEF177D8A3F3EF9ABFB61 /* Pods-PrettyPopover_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPopover_Tests.release.xcconfig"; path = "Target Support Files/Pods-PrettyPopover_Tests/Pods-PrettyPopover_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7E876AC5112FB638A21745B8 /* Pods_PrettyPopover_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrettyPopover_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37C70EFC5F9D1C8D6948756 /* Pods-PrettyPopover_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrettyPopover_Example.debug.xcconfig"; path = "Target Support Files/Pods-PrettyPopover_Example/Pods-PrettyPopover_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F902AE359DBDC674B1A15532 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DACFF5EC4781AD8DB59636A /* Pods_PrettyPopover_Tests.framework in Frameworks */,
+				870E464141B56079F8B67F24 /* Pods_PrettyPopover_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				145B887E4520BE1CFBB01924 /* Pods_PrettyPopover_Example.framework */,
-				212CC9E9A5EF8386A898C730 /* Pods_PrettyPopover_Tests.framework */,
+				7E876AC5112FB638A21745B8 /* Pods_PrettyPopover_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,8 +153,8 @@
 			children = (
 				D37C70EFC5F9D1C8D6948756 /* Pods-PrettyPopover_Example.debug.xcconfig */,
 				667782752D0648AAB8ABDEC9 /* Pods-PrettyPopover_Example.release.xcconfig */,
-				317F9B616CE7C4347E836DC2 /* Pods-PrettyPopover_Tests.debug.xcconfig */,
-				B28BEF177D8A3F3EF9ABFB61 /* Pods-PrettyPopover_Tests.release.xcconfig */,
+				22C8CF7DBA184D04F2EE712F /* Pods-PrettyPopover_Tests.debug.xcconfig */,
+				04893B797D129A0C11D09193 /* Pods-PrettyPopover_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "PrettyPopover_Tests" */;
 			buildPhases = (
-				86012B9BA1548C2DEFFE3C40 /* [CP] Check Pods Manifest.lock */,
+				BE11023878C2FD0BB682F186 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -269,13 +269,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PrettyPopover_Example/Pods-PrettyPopover_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework",
+				"${BUILT_PRODUCTS_DIR}/LoveUIKit/LoveUIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/PrettyPopover/PrettyPopover.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LoveUIKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PrettyPopover.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -304,7 +310,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		86012B9BA1548C2DEFFE3C40 /* [CP] Check Pods Manifest.lock */ = {
+		BE11023878C2FD0BB682F186 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -486,8 +492,12 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -502,14 +512,18 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 317F9B616CE7C4347E836DC2 /* Pods-PrettyPopover_Tests.debug.xcconfig */;
+			baseConfigurationReference = 22C8CF7DBA184D04F2EE712F /* Pods-PrettyPopover_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -532,7 +546,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B28BEF177D8A3F3EF9ABFB61 /* Pods-PrettyPopover_Tests.release.xcconfig */;
+			baseConfigurationReference = 04893B797D129A0C11D09193 /* Pods-PrettyPopover_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

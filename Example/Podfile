@@ -6,10 +6,13 @@ platform :ios, '11.0'
 
 target 'PrettyPopover_Example' do
   pod 'PrettyPopover', :path => '../'
+  
+  pod 'LoveUIKit', '0.0.5'
+  pod 'LookinServer', '1.0.6', :configurations => ['Debug']
 
   target 'PrettyPopover_Tests' do
     inherit! :search_paths
-    
+
   end
 end
 

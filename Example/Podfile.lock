@@ -1,23 +1,36 @@
 PODS:
+  - LookinServer (1.0.6)
+  - LoveUIKit (0.0.5):
+    - SnapKit (~> 5.0.1)
   - PrettyPopover (0.1.0):
-    - SnapKit (= 4.0.1)
-  - SnapKit (4.0.1)
+    - SnapKit (= 5.0.1)
+    - Then (= 3.0.0)
+  - SnapKit (5.0.1)
+  - Then (3.0.0)
 
 DEPENDENCIES:
+  - LookinServer (= 1.0.6)
+  - LoveUIKit (= 0.0.5)
   - PrettyPopover (from `../`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - LookinServer
+    - LoveUIKit
     - SnapKit
+    - Then
 
 EXTERNAL SOURCES:
   PrettyPopover:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PrettyPopover: 52228cf5ac6bdd811b24dcaa952bdfa0fe359a31
-  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  LookinServer: 18155b1e4a08213c236a1dd6b7ca52328a70a1e3
+  LoveUIKit: 9d407b177c83e23bb2893819e282c59a89d053d6
+  PrettyPopover: 441a30da6d0313d3f572962fd3228161f015ad09
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 9b54623b9a8baa5c97fefc6baf3750abe8d095c1
+PODFILE CHECKSUM: 86f3aa2d6fda436aca8b2cf784131fafcdd8b715
 
 COCOAPODS: 1.10.1
