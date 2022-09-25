@@ -23,5 +23,4 @@ jobs:
     - name: Test and Lint
       uses: ty0x2333/cocoapods-action@master
       with:
-        additional_build_params: -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.0'
-        additional_lint_params: --private
+        additional_build_params: -destination 'platform=iOS Simulator,id=BF09C5A9-87CB-4753-9FAE-D4B4472E9708'
