@@ -23,11 +23,11 @@ jobs:
       with:
         additional_build_params: -destination 'platform=iOS Simulator,id=ED60A719-6E1A-47AA-BB47-53683C1584D6'
     - name: Upload coverage to Codecov
-      run: |
-        curl -Os https://uploader.codecov.io/latest/macos/codecov
-        chmod +x codecov
-        ./codecov
-#       uses: codecov/codecov-action@v3
+#       run: |
+#         curl -Os https://uploader.codecov.io/latest/macos/codecov
+#         chmod +x codecov
+#         ./codecov
+      uses: codecov/codecov-action@v3
 #       with:
 #         directory: ./coverage/reports/
 #         fail_ci_if_error: true
