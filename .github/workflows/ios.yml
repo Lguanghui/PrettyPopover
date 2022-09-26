@@ -7,27 +7,103 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-    runs-on: macOS-latest
-    
+  Pods:
+    name: Cocoapods Lint
+    runs-on: macos-11
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_13.2.1.app
     steps:
-    - uses: actions/checkout@master
-    - name: Install Dependences
-      run: |
-        cd Example
-        pod repo update
-        pod install
-      shell: bash
-    - name: Test and Lint
-      uses: ty0x2333/cocoapods-action@master
-      with:
-        additional_build_params: -destination 'platform=iOS Simulator,id=ED60A719-6E1A-47AA-BB47-53683C1584D6' -configuration Debug CODE_SIGNING_ALLOWED=NO | xcpretty -c
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Cocoapods
+        run: gem install cocoapods --no-document --quiet
+        
+      - name: Install Xcpretty
+        run: gem install xcpretty --no-document --quiet
+        
+      - name: Pod Update.
+        run: pod repo update --silent
+        
+      - name: Pod Install.
+        run: pod install
+
+      - name: Run PrettyPopover podspec lint
+        run: |
+          set -o pipefail
+          pod lib lint PrettyPopover.podspec --allow-warnings --skip-tests
+          
+  Demo:
+    name: Run Demo
+    runs-on: macos-11
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_13.2.1.app
+      WORKSPACE_NAME: PrettyPopover.xcworkspace
+      iOSSCHEME: PrettyPopover-Example
+    strategy:
+      matrix:
+        iosDestination: ["name=iPhone 13 Pro"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Cocoapods
+        run: gem install cocoapods --no-document --quiet
+        
+      - name: Install Xcpretty
+        run: gem install xcpretty --no-document --quiet
+        
+      - name: Pod Update
+        run: pod repo update --silent
+        
+      - name: Pod Install
+        run: pod install
+        
+      - name: Run demo for iOS
+        run: |
+          set -o pipefail
+          xcodebuild build -workspace "${{ env.WORKSPACE_NAME }}" -scheme "${{ env.iOSSCHEME }}" -destination "${{ matrix.iosDestination }}" -configuration Debug CODE_SIGNING_ALLOWED=NO | xcpretty -c
+          
+  Test:
+    name: Unit Test
+    runs-on: macos-11
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_13.2.1.app
+      WORKSPACE_NAME: PrettyPopover.xcworkspace
+    strategy:
+      matrix:
+        iosDestination: ["platform=iOS Simulator,name=iPhone 13 Pro"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Cocoapods
+        run: gem install cocoapods --no-document --quiet
+        
+      - name: Install Xcpretty
+        run: gem install xcpretty --no-document --quiet
+        
+      - name: Pod Update
+        run: pod repo update --silent
+        
+      - name: Pod Install
+        run: pod install
+        
+      - name: Clean DerivedData
+        run: |
+          rm -rf ~/Library/Developer/Xcode/DerivedData/
+          mkdir DerivedData
+        
+      - name: Test - ${{ matrix.iosDestination }}
+        run: |
+          set -o pipefail
+          xcodebuild test -workspace "${{ env.WORKSPACE_NAME }}" -scheme "Pods-PrettyPopover_Tests" -destination "${{ matrix.iosDestination }}" -configuration Debug CODE_SIGNING_ALLOWED=NO | xcpretty -c
           mv ~/Library/Developer/Xcode/DerivedData/ ./DerivedData/iOS
-    - name: Code Coverage
-      run: |
-        set -o pipefail
-        export PATH="/usr/local/opt/curl/bin:$PATH"
-        curl --version
-        bash <(curl -s https://codecov.io/bash) -D './DerivedData/iOS' -J '^SDWebImage$' -c -X gcov -F ios
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3.1.1
+          
+      - name: Code Coverage
+        run: |
+          set -o pipefail
+          export PATH="/usr/local/opt/curl/bin:$PATH"
+          curl --version
+          bash <(curl -s https://codecov.io/bash) -D './DerivedData/iOS' -J '^PrettyPopover$' -c -X gcov -F ios
+
