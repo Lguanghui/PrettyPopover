@@ -54,7 +54,9 @@ jobs:
         run: gem install xcpretty --no-document --quiet
         
       - name: Pod Update
-        run: pod repo update --silent
+        run: |
+          cd Example
+          pod repo update --silent
         
       - name: Pod Install
         run: pod install
@@ -84,7 +86,9 @@ jobs:
         run: gem install xcpretty --no-document --quiet
         
       - name: Pod Update
-        run: pod repo update --silent
+        run: |
+          cd Example
+          pod repo update --silent
         
       - name: Pod Install
         run: pod install
