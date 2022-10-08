@@ -59,11 +59,31 @@ to show your popover.
 
 ## Showcase
 
-### Auto direction
+### Auto Direction
 
-![](Images/auto_direction.mov)
+![](Images/auto_direction.gif)
 
-<video src="Images/auto_direction.mov" controls="controls"></video>
+### Gradient Background
+
+![](Images/gradient.png)
+
+### Custom Content View
+
+![](Images/custom_content.png)
+
+### Update Width/Height with Animation
+
+![](Images/update_animation.gif)
+
+### Set Popover Offset
+
+![](Images/set_offset_1.png)
+
+You can also make the triangle shift with the popover:
+
+![](Images/set_offset_2.png)
+
+### and so on...
 
 ## Author
 

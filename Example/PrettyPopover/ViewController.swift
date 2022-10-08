@@ -132,9 +132,9 @@ final class DemoViewController: UIViewController {
             let randomInt = Int.random(in: 0..<PrettyPopoverDirection.allCases.count)
             config.direction = PrettyPopoverDirection(rawValue: randomInt) ?? .auto
         case 105:
-            // Gradient backgound
+            // Gradient background
             config.popoverScreenOverlayColor = UIColor.black.withAlphaComponent(0.2)
-            config.popoverGradientColors = [UIColor.color(fromHex: 0xDDFFF2), UIColor.white]
+            config.popoverGradientColors = [UIColor.color(fromHex: 0x66ffff), UIColor.white]
             config.popoverGradientLocations = [0, 1]
             config.popoverGradientStartPoint = CGPoint(x: 0.5, y: 0)
             config.popoverGradientEndPoint = CGPoint(x: 1, y: 1)
@@ -152,7 +152,7 @@ final class DemoViewController: UIViewController {
             image.snp.makeConstraints { make in
                 make.edges.equalToSuperview()
             }
-            config.popoverBackgroundColor = UIColor.cyan
+            config.popoverBackgroundColor = UIColor.color(fromHex: 0x57B0F1)
             config.direction = .auto
         case 107:
             // Show without trigger element
