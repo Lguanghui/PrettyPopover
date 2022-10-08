@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// The position of the popper relative to the trigger element
 @objc public enum PrettyPopoverDirection: Int, CaseIterable {
