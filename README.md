@@ -29,16 +29,41 @@ pod 'PrettyPopover'
 In your Package.swift, add
 
 ```swift
-dependencies: [
-    .package(url: "https://github.com/Lguanghui/PrettyPopover.git", .upToNextMajor(from: "0.1.0"))
-]
+let package = Package(
+    dependencies: [
+        .package(url: "https://github.com/Lguanghui/PrettyPopover.git", .upToNextMajor(from: "0.1.0"))
+    ]
+    // ...
+)
 ```
 
 Or, click Xcode `File` -> `Swift Packages` -> `Add Package Dependency`, enter [PrettyPopover repo's URL](https://github.com/Lguanghui/PrettyPopover.git).
 
 ## Usage
 
+`PrettyPopoverConfig` is the config of your popover, such as background, width, height...
 
+`PrettyPopoverManager` is the manager of your popovers.
+
+`PrettyPopover` is the view of your popover.
+
+Firstly, create an instance of `PrettyPopoverConfig` to tell the manager what your popover look like.
+
+Then, write codes like this,
+
+```swift
+PrettyPopoverManager.sharedInstance.show(WithSourceView: yourSourceView, inView: yourInView, customView: yourCustomView, config: yourConfig)
+```
+
+to show your popover.
+
+## Showcase
+
+### Auto direction
+
+![](Images/auto_direction.mov)
+
+<video src="Images/auto_direction.mov" controls="controls"></video>
 
 ## Author
 
