@@ -2,9 +2,9 @@
 
 ![CI Status](https://github.com/Lguanghui/PrettyPopover/actions/workflows/ios.yml/badge.svg)
 [![Version](https://img.shields.io/cocoapods/v/PrettyPopover.svg?style=flat)](https://cocoapods.org/pods/PrettyPopover)
-[![License](https://img.shields.io/cocoapods/l/PrettyPopover.svg?style=flat)](https://cocoapods.org/pods/PrettyPopover)
+[![License](https://img.shields.io/cocoapods/l/PrettyPopover.svg?style=flat)](https://github.com/Lguanghui/PrettyPopover/blob/main/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/PrettyPopover.svg?style=flat)](https://cocoapods.org/pods/PrettyPopover)
-[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://github.com/Lguanghui/PrettyPopover/blob/main/Package.swift)
 
 ## Example
 
